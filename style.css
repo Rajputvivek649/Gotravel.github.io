@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,500&family=Mukta&family=Poppins&family=Righteous&family=Roboto:wght@500&family=Smooch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --lightbackground:#ffffff;
+    --Softbackground:#eeecec;
+    --mainColor:#ff4757;
+    --softpink:#FF8B8B;
+    --paraColor:#151819;
+    --HeadingFont:'Open Sans';
+}
+
+h1{
+    font-family: var(--HeadingFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 5.4rem;
+    text-align: center;
+    color: var(--mainColor);
+    padding: 2rem 0 3rem 0;
+}
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 124.5%;
+    
+}
+p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;    
+    color: var(--paraColor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--lightbackground);
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header section start  */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 87.49%), url("/Images/Background/stefan-stefancik-6whwCHgsMiA-unsplash\ 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--paraColor);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.4);
+    padding: 1rem 8%; 
+} 
+
+header #menu-link ul{
+    display: flex;
+    position: relative;
+}
+
+header #menu-link a{
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+header #menu-link #cancel{
+    display: none;
+    font-size: 3rem;
+    padding: 0 1rem;
+    color: var(--mainColor);
+    position: absolute;
+}
+header #menu-link a:hover{
+    color: var(--mainColor);
+}
+
+header .nav-icon{
+    display: block;
+}
+
+header .nav-icon a{
+    font-size: 3rem;
+    padding: 0 1rem;
+    color: var(--mainColor);
+}
+
+header .nav-icon a:hover{
+    color: var(--softpink);
+}
+header .nav-icon #bar {
+    display: none;
+    font-size: 3rem;
+    padding: 0 1rem;
+    color: var(--mainColor);
+}
+
+header .nav-icon #bar:hover{
+    color: var(--softpink);
+}
+header .hero{
+    text-align: center;
+    height: calc(100vh - 8rem - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 600px; */
+    margin: auto;
+    padding-top: 15%;
+}
+
+header .hero .tittle{
+    font-weight: 800;
+    font-size: 5rem;
+    font-family: var(--HeadingFont);
+    color: var(--lightbackground);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+header .hero p{
+    color: var(--Softbackground);
+    margin-top: 2.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+header .hero a{
+    margin-top: 2.5rem;
+    padding: 1rem  3rem;
+    border-radius: 15px;
+    background: linear-gradient( to right, #ff4757, #FF8B8B);
+    font-size: 2rem;
+    /* line-height: 4; */
+}
+
+header .hero a:hover{
+    background: linear-gradient( to left, #ff4757, #FF8B8B);
+}
+/* Header section end  */
+
+/* Services Section Start  */
+
+.container{
+    padding: 2rem 8%;
+}
+
+.container .services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.container .services .services-card{
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    flex: 1 1 35rem;
+    padding: 4rem 3rem 2rem 3rem;
+}
+
+.container .services .services-card span{
+    color: var(--softpink);
+    font-size: 3rem;
+}
+
+.container .services .services-card h2{
+    font-size: 2.4rem;
+    padding: 1.5rem 0;
+}
+
+.container .services .services-card p{
+    color: var(--paraColor);
+    padding: .5rem 0;
+}
+
+.container .services .services-card:nth-child(1){
+    background-color: var(--Softbackground)
+}
+
+.container .services .services-card:nth-child(2){
+    background-color: var(--lightbackground)
+}
+
+.container .services .services-card:nth-child(3){
+    background-color: var(--Softbackground)
+}
+
+.container .services .services-card .fa-ticket{
+    color: #32DF8F;
+}
+
+.container .services .services-card .fa-hotel{
+    color:  #00B8E0;
+}
+
+.container .services .services-card .fa-umbrella-beach{
+    color: #E48B78;
+}
+/* Services Section End  */
+/* Location Section Start */
+.location{
+   background:linear-gradient(rgba(0, 88, 83, 0.05), rgba(0, 88, 83, 0.05)) ,url("/Images/Pngs/world_map_PNG28\ 1.png");
+   width: 100%;
+   height: auto;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin-top: 13rem;
+   padding: 5rem 10% 10rem 10%;
+}
+
+.location .location-content{
+    text-align: center;
+    /* margin-bottom: 3rem; */
+}
+
+.location .location-content h1{
+    padding: 1rem 0;
+}
+
+.location .main-location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 2.5rem;
+    padding: 5rem 0;
+    margin-top: 5rem;
+}
+
+.location .main-location .location-card{
+    flex: 1 1 15rem;
+    text-align: center;
+    background-color: var(--lightbackground);
+    max-width: 17rem;
+    max-height: 20rem;
+    padding: 3rem 3.5rem;
+    border-radius: 1rem;
+}
+
+.location .main-location .location-card .fas{
+    color: var(--mainColor);
+    padding: .5rem;
+    font-size: 2.5rem;
+}
+
+.location .main-location .location-card h2{
+    color: var(--paraColor);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+/* Location Section End */
+
+/* Our Popular disitinations Section Start  */
+.Popular-d-s{
+    background-color: var(--lightbackground);
+    padding: 8rem 0;
+}
+
+.Popular-d-s .container-1{
+    padding: 3rem 10% 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13%;
+}
+.Popular-d-s .container-1 .side-1{
+    flex: 1 1 40%;
+
+}
+
+.Popular-d-s .container-1 .side-2{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+    gap: 2rem;
+    justify-content: center;
+    justify-content: space-around;
+}
+.Popular-d-s .container-1 .populsr-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.100);
+    border-radius: 1rem;
+}
+
+.Popular-d-s .container-1 .side-1 img{
+    width: 100%;
+    height: auto;
+}
+
+
+.Popular-d-s .side-2 .populsr-card img{
+    width: 15rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.Popular-d-s .side-2 .populsr-card .p-card-icon img{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+/* Our Popular disitinations Section End  */
+/* Package Section Start */
+
+#Packages{
+    background-color: var(--Softbackground);
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.box-container .boxs{
+    color: var(--lightbackground);
+    background-color: var(--softpink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 4.5rem;
+    border-radius: 1rem;
+}
+
+.present{
+    background-color: var(--mainColor) !important;
+}
+
+#Packages .container .box-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+#Packages .container .box-card .box{
+    max-width: 34rem;
+    border-radius: 1rem;
+    background-color: var(--lightbackground);
+}
+
+#Packages .container .box-card .box img{
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.box-content img{
+    width: 1.6rem !important;
+}
+#Packages .container .box-card .box .box-content{
+    padding: 1rem;
+}
+
+#Packages .container .box-card .box .box-content h3, h4{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#Packages .container .box-card .box .box-content span{
+    float: right;
+}
+
+#Packages .container button{
+    outline: none;
+    border: none;
+    margin: 2.5rem auto;
+    width: inherit;
+    display: block;
+}
+#Packages .container button a{
+    padding: 1rem  3rem;
+    border-radius: 15px;
+    background: linear-gradient( to right, #ff4757, #FF8B8B);
+    font-size: 2rem;
+}
+
+#Packages .container .box-card a:hover{
+    background: linear-gradient( to left, #ff4757, #FF8B8B);
+}
+/* Package Section End */
+/* Easy Section Start  */
+#Easystep .Easystep{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#Easystep .Steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+#Easystep .Steps .Step{
+    max-width: 41rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Easystep .Steps .Step .fas{
+    display: inline-block;
+    padding: 2rem;
+    margin: auto 3rem auto 0;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    color: var(--lightbackground);
+}
+
+#Easystep .Steps .Step .fa-vector-square{
+    background-color: #F0BB1F;
+}
+
+#Easystep .Steps .Step .fa-person-swimming{
+    background-color: #F15A2B;
+}
+
+#Easystep .Steps .Step .fa-taxi{
+    background-color: #006380;
+}
+#Easystep .Steps h3{
+    font-family: var(--HeadingFont);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--paraColor);
+    line-height: 3;
+} 
+
+.step-card{
+    width: 37rem;
+    border-radius: 2.6rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    position: relative;
+}
+
+.step-card img{
+    border-radius: 2.6rem;
+    width: 32.1rem;
+}
+
+.step-card h2{
+    color: var(--paraColor);
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.step-card a i{
+    color: var(--mainColor);
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    background-color:var(--Softbackground);
+
+}
+
+.step-card span{
+    float: right;
+}
+/* Step Mini Card  */
+/* 
+.step-mini-card{
+    width: 26.3rem;
+    height: 13rem;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    background-color: var(--Softbackground);
+    border-radius: 1.8rem;
+    position: absolute;
+    bottom: 5.5rem;
+    left: 32rem;
+}
+
+.step-mini-card img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+   margin-top: 1.8rem;
+   margin-left: 2.1rem;
+}
+
+.step-mini-card .card-discription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -5.5rem;
+}
+
+.step-mini-card .card-discription h2{
+    color: var(--paraColor);
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+.step-mini-card .card-discription span{
+    color: var(--softpink);
+}
+
+.step-mini-card .card-discription .percentage{
+    width: 80%;
+    background-color: var(--lightbackground);
+    height: .5rem;
+    margin-top: 1rem;
+    position: relative;
+    border-radius: 3rem;
+} */
+/* Easy Section End  */
+/* About us section Start  */
+.Aboutus{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--Softbackground);
+}
+.Aboutus img{
+    border-radius: 2rem;
+}
+.Aboutus .container .pic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Aboutus .container .pic-container img{
+    height: 40.5rem;
+}
+
+.Aboutus .pic-box1 img{
+    position: absolute;
+    width: 40rem;
+    left: -25.5rem;
+    top: 19.5rem;
+    opacity: 35%;
+}
+
+.Aboutus .pic-box2 img{
+    position: absolute;
+    width: 40rem;
+    right: -25.5rem;
+    top: 19.5rem;
+    opacity: 35%;
+}
+
+.Aboutus .container .Tonystark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 10% 3rem 10%;
+    gap: 2rem;
+    background: var(--lightbackground);
+    box-shadow: 0px 4px 59px 9px rgb(0 0 0 / 5%);
+    position: relative;
+    width: 65rem;
+    height: 25rem;
+    margin: auto;
+    margin-top: -20rem;
+}
+
+.Aboutus .container .Tonystark p{
+    color: black;
+    text-transform: capitalize;
+    word-spacing: .5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.Aboutus .container .Tonystark h2{
+    font-family: var(--HeadingFont);
+    font-size: 2rem;
+    color: var(--mainColor);
+    letter-spacing: .5rem;
+    font-weight: 600;
+}
+.Aboutus .container .Tonystark img{
+    position: absolute;
+    top: -5rem;
+    border-radius: 50%;
+    width: 10rem;
+    border: .2rem solid var(--Softbackground);
+}
+/* About us section End  */
+/* Contsct Section Star  */
+
+.Contact{
+    background-color: var(--lightbackground);
+    padding: 2rem 0;
+}
+
+.Contact .container .seacrh-box{
+    width: 100%;
+    height: auto;
+    background-color: #ff8b8b8f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7.5%;
+    border-radius: 2rem;
+    border-top-left-radius: 13rem;
+    text-align: center;
+    text-transform: capitalize;
+    gap: 1rem;
+    position: relative;
+    z-index: 108;
+}
+
+.Contact .container .seacrh-box h4{
+    font-family: var(--HeadingFont);
+    font-size: 3.3rem;
+    font-weight: 600;
+    line-height: 5.4rem;
+    color: var(--paraColor);
+    opacity: .8;
+    z-index: 101;
+}
+
+.Contact form .input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.Contact .container .seacrh-box form .fas{
+    font-size: 3rem;
+    padding: 1rem ;
+    color: var(--mainColor);
+    background-color: var(--lightbackground);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 1.5px solid var(--lightbackground);
+    z-index: 104;
+}
+
+.Contact .container .seacrh-box form .input-filed{
+    width: 30rem;
+    padding: 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid var(--lightbackground);
+    z-index: 107;
+}
+
+.Contact .container .seacrh-box form .input-filed:focus{
+    border-color: var(--mainColor);
+}
+
+.Contact .container .seacrh-box form button{
+    outline: none;
+    border: none;
+    margin-left: 2rem;
+    padding: 1.5rem ;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: var(--mainColor);
+    color: var(--lightbackground);
+    font-weight: 500;
+    z-index: 106;
+}
+
+.Contact .container .seacrh-box form button:hover{
+    background-color: var(--lightbackground);
+    color: var(--mainColor);
+    cursor: pointer;
+}
+.Contact .seacrh-box a{
+    padding: 1.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    background: linear-gradient(201.65deg, #ff4757 10.27%, #FF8B8B 100%);
+    position: absolute;
+    top: -1.5rem; right: -1.5rem;
+    z-index: 103;
+}
+/* Contact Section End  */
+/* Footer Section start  */
+.footer{
+    padding: 5rem 0;
+    background-color: var(--Softbackground);
+}
+.footer .container .menu-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.footer .container .menu-links .menu-tittle{
+    flex: 1 1 20rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.footer .container .menu-links .menu-tittle h4{
+    font-family: var(--HeadingFont);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+
+.footer .container .menu-links .menu-tittle a{
+    margin-top: 1.5rem;
+    color: var(--paraColor);
+    font-size: 1.6rem;
+}
+
+.footer .container .menu-links .menu-tittle a:hover{
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.footer .menu-tittle .social-icons a{
+    font-size: 2.5rem !important;
+    padding: 0 1rem;
+    color: var(--mainColor) !important;
+}
+
+/* Footer Section End  */
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+    background-color: var(--lightbackground);
+}
+
+.copyright span{
+    font-family: var(--HeadingFont);
+    color: var(--mainColor);
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queriys  */
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    html{
+        font-size: 40%;
+    }
+ 
+    header .hero .tittle{
+        font-size: 3rem;
+    }
+
+    .location .main-location{
+        justify-content: center;
+    }
+
+    #Packages .container .box-card{
+        justify-content: center;
+    }
+    .container-1{
+        flex-direction: column;
+    }
+    #Easystep .Easystep{
+        justify-content: center;
+    }
+    .Aboutus .container .Tonystark{
+        padding: 5rem 5% 2rem 5%;
+        width: 35rem;
+    }
+    .Contact .container .seacrh-box form .input-filed{
+        width: 20rem;
+    }
+ }
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+   html{
+    font-size: 50%;
+}
+.nav-icon #bar{
+    display: inline-block !important;
+}
+    
+#menu-link{
+       display:block;
+       width: 25rem;
+       height: 100vh;
+       position: absolute;
+       top: 0;
+       right: -25rem;
+       background-color: var(--paraColor);
+    
+}
+#menu-link.active{
+    right: 0;
+}   
+#menu-link ul{
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-left: 1.5rem;
+}
+#menu-link #cancel{
+    display: inline-block !important;
+    position: absolute;
+    top: -5.5rem;
+    left: -.7rem;
+}
+#menu-link ul li{
+    margin-bottom: 2.5rem;
+}
+#menu-link ul li a{
+    border-left: .5rem solid var(--mainColor);
+}
+
+.Popular-d-s .container-1{
+    padding: 8rem 10%;
+}
+.Popular-d-s .side-2 .populsr-card img{
+    width: 13rem;
+}
+
+#Packages .container .box-card{
+    gap: 2.5rem;
+}
+.Aboutus .container .Tonystark {
+    /* width: 45rem; */
+    height: 18.5rem;
+    margin-top: -12.5rem;
+    gap: 1rem;
+}
+.Contact .container .seacrh-box img{
+    display: none;
+}
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .pic-box1, .pic-box2{
+        display: none;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    html{
+        font-size: 70%;
+    }
+ }
